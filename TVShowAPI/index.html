@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show Search App</title>
+    <style>
+        .button{
+            margin-bottom: 15px;
+        }
+        #nigtext{
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            padding: 5px; 
+            font-size: 16px; /* Font size */
+            text-align: center; /* Center-align the text */
+            width: 100%; 
+            
+        }
+        
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="subtitle is-1 has-text-info-light">Search For TV Shows</h1>
+      <div class="field">
+      <form id="searchForm">
+        <input class="input is-info" type="text" name="query" placeholder="TV Movie Title" />
+    </div>
+        <button class="button is-info">Search</button>
+      </form>
+      <div id="showImg"></div>
+      <script src="app.js"></script>
+    </div>
+    <p id="nigtext" class="has-text-info"> Made with &hearts; by Tarun Aaditya </p>
+  </body>
+</html>
